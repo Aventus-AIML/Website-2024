@@ -1,0 +1,81 @@
+
+.ps h1 {
+  color: #fff;
+  font-size:2rem;
+  align-items: center;
+  text-align: center;
+  margin-top: 150px;
+}
+
+.timeline h6 {
+  color: lightgreen;
+  font-size:1rem;
+  text-align: left;
+  margin-top: 20px;
+
+}
+
+.glimpse h1 {
+    color: #fff;
+    font-size:2rem;
+    align-items: center;
+    text-align: center;
+    margin-top: 150px;
+  }
+
+  .mentors h1 {
+    color: teal;
+    font-size:2rem;
+    text-align: center;
+    margin-top: 200px;
+
+}
+
+.judges h1 {
+  margin-top: 200px;
+  color: red;
+  font-size:2rem;
+  text-align: center;
+
+}
+
+.GrandJury h1 {
+  margin-top: 200px;
+  color: gold;
+  font-size:2rem;
+  text-align: center;
+
+}
+
+.individual h1 {
+  margin-top: 200px;
+  color: #fff;
+  font-size:2rem;
+  text-align: center;
+
+}
+
+.map h1 {
+  margin-top: 200px;
+  color: #fff;
+  font-size:2rem;
+  text-align: center;
+  justify-content: center;
+
+}
+
+.swarmBackground {
+  background-repeat: no-repeat;
+  
+
+}
+
+.conta{
+
+  overflow-x: hidden;
+}
+
+.answer{
+  font-family:'Courier New', Courier, monospace;
+  font-weight: 500;
+}

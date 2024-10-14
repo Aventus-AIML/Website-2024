@@ -1,0 +1,506 @@
+#landing-main{
+    color:white;
+    min-height:100vh;
+}
+
+#effect {
+    width: 100%;
+    min-height: 90vh;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    position: absolute;
+    touch-action: pan-up;
+    pointer-events: none;
+    z-index: -1;
+    overflow: hidden;
+}
+
+#effect::before {
+    content: "";
+    position: absolute;
+    /* Hidden by default */
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black background with opacity */
+    z-index: 2;
+    /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer;
+    /* Add a pointer on hover */
+}
+@media(max-width:1214px){
+    #effect{
+        min-height: 120vh;
+    }
+    #effect::before{
+        min-height: 120vh;
+    }
+}
+@media(max-width:849px){
+    #effect{
+        min-height: 130vh;
+    }
+    #effect::before{
+        min-height: 130vh;
+    }
+}
+@media(max-width:500px){
+    #effect{
+        min-height: 150vh;
+    }
+    #effect::before{
+        min-height: 140vh;
+    }
+}
+
+.lcontent {
+    padding-top: 5rem;
+    margin: auto;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    transform: scale(0.9);
+}
+
+.ename {
+    font-size: 4.5rem;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+    line-height: 5rem;
+    letter-spacing: 2px;
+}
+.ename div{
+    margin: 0;
+    padding: 0;
+}
+.name_two{
+    font-size: 5rem;
+}
+
+.etagline {
+    font-size: 1.5rem;
+    margin-top: -2rem;
+    margin-bottom: 2rem;
+}
+
+.edate {
+    font-size: larger;
+    font-weight: 100;
+    font-family: 'Mont';
+    font-weight: bold;
+}
+
+.eline {
+
+    font-size: larger;
+    font-family: 'Mont';
+    font-weight: bold;
+}
+
+.lleft {
+    width: 49.5%;
+}
+
+.lright {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.llogo {
+    color: #fff;
+    margin: 40px 5rem;
+    background-color: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10rem;
+    padding: 32px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 0px 20px 9px #000000;
+    transition: all 0.3s;
+}
+
+
+
+.llogo img {
+    height: 15rem;
+}
+
+.dbtn {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+.msg {
+    font-family: 'Mont';
+    font-weight: bold;
+    margin-bottom: 1rem;
+    font-size: larger;
+}
+
+.devbtn button svg {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+.devbtn button {
+    margin-top: 1.5rem;
+    display: flex;
+    align-self: auto;
+    margin-left: 2rem;
+    width: 20rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 0.5rem;
+    border: 0;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(30px);
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 14px;
+    cursor: pointer;
+    display: flex;
+    transition: all 0.2s;
+}
+
+.devbtn p{
+    font-size: large;
+    font-weight: 100;
+    font-family: 'Mont';
+    font-weight: bold;
+    text-align: center;
+}
+
+.llogo:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: scale(1.1);
+}
+
+.devbtn button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: scale(1.1);
+}
+
+.sbtn img {
+    width: 3rem;
+}
+
+.socialmediabtn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.sbtn {
+    display: inline-block;
+    padding: 1.5rem;
+    border: 0;
+    width: 4rem;
+    height: 4rem;
+
+    border-radius: 10rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(30px);
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 14px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0 1rem;
+    transition: all 0.2s;
+}
+
+.sbtn:hover {
+    background-color: rgba(255, 255, 255, 0.281);
+    transform: scale(1.1);
+}
+
+.invert {
+    filter: invert();
+}
+
+.presented {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: auto;
+    margin-top: -40vh;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0rem;
+    transform: scale(0.75);
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 1rem;
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 0px 20px 9px #000000;
+    transition: all 0.3s;
+    padding: 1rem;
+}
+
+.ptext {
+    margin-bottom: 0.5rem;
+    font-family: 'Mont';
+    font-weight: bold;
+}
+
+.pname {
+
+    font-size: larger;
+    font-family: 'Mont';
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.pclg {
+    font-size: 2rem;
+    /* font-family: 'Conversion'; */
+    /* font-weight: bold */
+}
+
+.devbtn button{
+    margin: 0;
+}
+.devbtn{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+@media only screen and (max-width: 640px) {
+
+
+    .lcontent {
+        padding-top: 3rem;
+        margin: auto;
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .lleft {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .ename {
+        font-size: 3rem;
+        font-weight: bolder;
+        text-align: center;
+        letter-spacing: 7px;
+        margin-bottom: 30px;
+    }
+    .name_two{
+        font-size: 4rem;
+    }
+
+    .etagline {
+        font-size: medium;
+        margin-top: 1rem;
+        margin-bottom: 1.7rem;
+    }
+
+    .edate {
+        font-size: medium;
+        font-weight: 100;
+        font-family: 'Mont';
+        font-weight: bold;
+    }
+
+    .eline {
+        font-size: medium;
+        font-family: 'Mont';
+        font-weight: bold;
+    }
+
+
+    .lright {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: medium;
+    }
+
+    .llogo {
+        color: #fff;
+        margin: 15px 5rem;
+        background-color: rgba(255, 255, 255, 0.06);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 10rem;
+        padding: 20px;
+        backdrop-filter: blur(10px);
+        box-shadow: 0px 0px 20px 9px #000000;
+        transition: all 0.3s;
+    }
+
+    .llogo img {
+        height: 5rem;
+    }
+
+
+    .msg {
+        font-family: 'Mont';
+        font-weight: bold;
+        margin-bottom: 1rem;
+        font-size: medium;
+    }
+
+    .devbtn button svg {
+        margin-left: 0.5rem;
+    }
+
+    .devbtn button {
+        margin-top: 2rem;
+        display: inline-block;
+        padding: 1rem 0.5rem;
+        border: 0;
+        border-radius: 15px;
+        background-color: rgba(255, 255, 255, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(30px);
+        color: rgba(255, 255, 255, 0.8);
+        font-size: 14px;
+        cursor: pointer;
+        display: flex;
+        flex-direction: row;
+        padding-left: 1.2rem;
+        transition: all 0.2s;
+    }
+
+    .llogo:hover {
+        background-color: rgba(255, 255, 255, 0.1);
+        transform: scale(1.1);
+    }
+
+    .devbtn button:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+        transform: scale(1.1);
+    }
+
+    .registeration {
+        margin-top: 2rem;
+        display: inline-block;
+        padding: 1rem 0.5rem;
+        border: 0;
+        border-radius: 15px;
+        background-color: rgba(255, 255, 255, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(30px);
+        color: rgba(255, 255, 255, 0.8);
+        font-size: 14px;
+        cursor: pointer;
+        display: flex;
+        flex-direction: row;
+        padding-left: 1.2rem;
+        transition: all 0.2s;
+    }
+
+    .registeration:hover {
+        background-color: rgba(7, 78, 243, 0.2);
+        transform: scale(1.1);
+    }
+
+    .sbtn img {
+        width: 3rem;
+    }
+
+    .socialmediabtn {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sbtn {
+        display: inline-block;
+        padding: 1rem;
+        border: 0;
+        width: 3rem;
+        height: 3rem;
+
+        border-radius: 10rem;
+        background-color: rgba(255, 255, 255, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(30px);
+        color: rgba(255, 255, 255, 0.8);
+        font-size: 14px;
+        cursor: pointer;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: 0 1rem;
+        transition: all 0.2s;
+    }
+
+    .sbtn:hover {
+        background-color: rgba(255, 255, 255, 0.281);
+        transform: scale(1.1);
+    }
+
+    .invert {
+        filter: invert();
+    }
+
+    .presented {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        margin-top: -1rem;
+
+        color: #fff;
+        background-color: rgba(255, 255, 255, 0.06);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 1rem;
+        backdrop-filter: blur(10px);
+        box-shadow: 0px 0px 20px 9px #000000;
+        transition: all 0.3s;
+        padding: 1rem;
+    }
+
+    .ptext {
+        margin-bottom: 0.25rem;
+        font-family: 'Mont';
+        font-weight: bold;
+    }
+
+    .pname {
+
+        font-size: small;
+        font-family: 'Mont';
+        font-weight: bold;
+        margin-bottom: 0.5rem;
+        text-align: center;
+        margin-top: 1rem;
+    }
+
+    .pclg {
+        font-size: 1.5rem;
+        text-align: center;
+        /* font-family: 'Conversion'; */
+        /* font-weight: bold */
+    }
+}
